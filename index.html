@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RentCar menyediakan layanan sewa mobil harian, bisnis, liburan, dan keluarga dengan unit terawat serta booking WhatsApp.">
+  <title>RentCar - Rental Mobil Terpercaya</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Segoe UI', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 bg-white font-sans leading-normal text-[#102344]">
+  <header class="site-header sticky top-0 z-30 mx-auto grid w-[calc(100%_-_64px)] max-w-[1150px] grid-cols-[190px_1fr_150px] items-center gap-[22px] bg-white/95 py-[18px] pb-4 backdrop-blur-xl max-[1120px]:w-[calc(100%_-_32px)] max-[1120px]:max-w-[980px] max-[1120px]:grid-cols-[170px_1fr_140px] max-[820px]:grid-cols-[1fr_42px_132px] max-[820px]:pt-3 max-[590px]:w-[calc(100%_-_22px)] max-[590px]:max-w-[440px] max-[590px]:grid-cols-[1fr_42px] max-[590px]:gap-2.5" id="beranda">
+    <a class="brand inline-flex min-h-11 items-center text-[#102955]" href="#beranda" aria-label="RentCar beranda">
+      <span class="brand-mark mr-3 grid h-11 w-11 place-items-center rounded-xl bg-[#0875ff] text-lg font-bold text-white shadow-[0_10px_22px_rgba(8,117,255,.22)]" aria-hidden="true">R</span>
+      <span>
+        <strong class="relative z-[1] mt-2.5 block text-[28px] font-bold leading-[.92] max-[590px]:text-[25px]">RentCar</strong>
+        <small class="ml-[34px] block text-[10px] font-bold text-[#203559]">Rental Mobil</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle hidden h-10 w-10 cursor-pointer place-items-center rounded-lg bg-[#edf5ff] max-[820px]:col-start-2 max-[820px]:grid" type="button" aria-label="Buka menu" aria-expanded="false">
+      <span class="my-[3px] block h-0.5 w-[15px] rounded-sm bg-[#061b46]"></span>
+      <span class="my-[3px] block h-0.5 w-[15px] rounded-sm bg-[#061b46]"></span>
+      <span class="my-[3px] block h-0.5 w-[15px] rounded-sm bg-[#061b46]"></span>
+    </button>
+
+    <nav class="main-nav flex items-center justify-center gap-[clamp(18px,3vw,42px)] text-sm font-bold text-[#15233e] max-[1120px]:gap-[18px] max-[1120px]:text-[13px] max-[820px]:absolute max-[820px]:left-0 max-[820px]:right-0 max-[820px]:top-[calc(100%_+_6px)] max-[820px]:hidden max-[820px]:flex-col max-[820px]:items-stretch max-[820px]:gap-0 max-[820px]:rounded-xl max-[820px]:border max-[820px]:border-[#dce7f7] max-[820px]:bg-white max-[820px]:p-2 max-[820px]:shadow-[0_12px_32px_rgba(10,38,86,.13)] max-[820px]:[&.open]:flex" aria-label="Navigasi utama">
+      <a class="active py-2 transition-colors hover:text-[#0875ff] [&.active]:text-[#0875ff] max-[820px]:rounded-lg max-[820px]:px-3.5 max-[820px]:py-3 max-[820px]:hover:bg-[#edf5ff]" href="#beranda">Beranda</a>
+      <a class="py-2 transition-colors hover:text-[#0875ff] [&.active]:text-[#0875ff] max-[820px]:rounded-lg max-[820px]:px-3.5 max-[820px]:py-3 max-[820px]:hover:bg-[#edf5ff]" href="#mobil">Mobil</a>
+      <a class="py-2 transition-colors hover:text-[#0875ff] [&.active]:text-[#0875ff] max-[820px]:rounded-lg max-[820px]:px-3.5 max-[820px]:py-3 max-[820px]:hover:bg-[#edf5ff]" href="#layanan">Layanan</a>
+      <a class="py-2 transition-colors hover:text-[#0875ff] [&.active]:text-[#0875ff] max-[820px]:rounded-lg max-[820px]:px-3.5 max-[820px]:py-3 max-[820px]:hover:bg-[#edf5ff]" href="#syarat">Syarat</a>
+      <a class="py-2 transition-colors hover:text-[#0875ff] [&.active]:text-[#0875ff] max-[820px]:rounded-lg max-[820px]:px-3.5 max-[820px]:py-3 max-[820px]:hover:bg-[#edf5ff]" href="#tentang">Tentang Kami</a>
+      <a class="py-2 transition-colors hover:text-[#0875ff] [&.active]:text-[#0875ff] max-[820px]:rounded-lg max-[820px]:px-3.5 max-[820px]:py-3 max-[820px]:hover:bg-[#edf5ff]" href="#kontak">Kontak</a>
+    </nav>
+
+    <a class="wa-button inline-flex min-h-[30px] items-center justify-center gap-2 rounded-[11px] bg-gradient-to-b from-[#13bd63] to-[#0fac58] px-4 text-sm font-semibold text-white shadow-[0_12px_22px_rgba(19,189,99,.24)] transition hover:-translate-y-0.5 max-[590px]:col-span-full max-[590px]:w-full" href="https://wa.me/6281234567890?text=Halo%20RentCar%2C%20saya%20ingin%20booking%20mobil" target="_blank" rel="noopener">
+      <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5a9.3 9.3 0 0 0-7.9 14.2L3 21l4.4-1.1a9.3 9.3 0 1 0 4.64-17.4Zm0 1.9a7.4 7.4 0 0 1 6.3 11.3 7.38 7.38 0 0 1-9.4 2.5l-.34-.18-2.64.68.7-2.56-.22-.36a7.4 7.4 0 0 1 5.6-11.38Zm-3.1 3.9c-.18 0-.48.06-.73.34-.25.27-.96.94-.96 2.3 0 1.35.98 2.66 1.12 2.84.14.18 1.9 3.04 4.72 4.13 2.34.92 2.82.73 3.33.68.51-.05 1.64-.67 1.87-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32-.28-.14-1.64-.8-1.9-.9-.25-.09-.44-.14-.62.14-.19.28-.72.9-.88 1.08-.16.19-.32.2-.6.07-.28-.14-1.17-.43-2.24-1.38-.83-.73-1.4-1.65-1.56-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.04-.34-.03-.48-.07-.14-.62-1.5-.86-2.04-.22-.53-.45-.45-.62-.46h-.53Z"/></svg>
+      WhatsApp
+    </a>
+  </header>
+
+  <main class="mx-auto mb-7 w-[calc(100%_-_64px)] max-w-[1150px] max-[1120px]:w-[calc(100%_-_32px)] max-[1120px]:max-w-[980px] max-[590px]:w-[calc(100%_-_22px)] max-[590px]:max-w-[440px]">
+    <section class="hero-slider relative min-h-[400px] overflow-hidden rounded-[18px] bg-gradient-to-r from-[#031641] via-[#042254] to-[#0b4aa0] shadow-[0_12px_32px_rgba(10,38,86,.13)] max-[820px]:min-h-[590px] max-[590px]:rounded-[14px]" aria-label="Promo rental mobil">
+      <button class="slider-arrow prev absolute left-3.5 top-1/2 z-20 grid h-10 w-10 -translate-y-1/2 cursor-pointer place-items-center rounded-full bg-white text-[#061b46] shadow-[0_8px_20px_rgba(0,24,61,.18)] max-[820px]:bottom-5 max-[820px]:top-auto max-[590px]:left-3" type="button" aria-label="Slide sebelumnya">
+        <svg class="h-[23px] w-[23px] fill-none stroke-current stroke-[3] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="m15.2 5.2-6.8 6.8 6.8 6.8"/></svg>
+      </button>
+
+      <article class="hero-panel active absolute inset-0 grid grid-cols-[45%_55%] opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out [&.active]:opacity-100 [&.active]:pointer-events-auto max-[820px]:grid-cols-1 max-[820px]:grid-rows-[auto_1fr]" data-slide="0">
+        <div class="hero-copy relative z-10 flex max-w-[500px] flex-col justify-center px-6 py-[42px] pb-12 pl-[74px] text-white max-[820px]:px-7 max-[820px]:py-10 max-[820px]:pb-3 max-[590px]:px-5 max-[590px]:pt-[34px]">
+          <span class="eyebrow mb-[18px] self-start rounded-full bg-[#0b63d8] px-4 py-2 text-xs font-medium">Rental Mobil Terpercaya</span>
+          <h1 class="mb-3 text-[clamp(24px,3.5vw,32px)] font-semibold leading-[1.14] text-white max-[590px]:text-[31px]">Sewa Mobil Mudah, Nyaman &amp; Aman</h1>
+          <p class="mb-[22px] max-w-[480px] text-[17px] font-normal text-white/90 max-[590px]:text-[15px]">Tersedia berbagai pilihan mobil untuk kebutuhan harian, perjalanan bisnis, liburan, dan acara keluarga.</p>
+          <div class="hero-actions flex flex-wrap gap-[18px] max-[590px]:w-full">
+            <a class="btn primary inline-flex min-h-9 min-w-[150px] items-center justify-center gap-[9px] rounded-lg bg-[#0875ff] px-5 font-semibold text-white shadow-[0_12px_22px_rgba(8,117,255,.28)] transition hover:-translate-y-0.5 max-[590px]:w-full" href="#mobil">
+              <svg class="h-[19px] w-[19px] fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 17.5H5.2A2.2 2.2 0 0 1 3 15.3v-2.8c0-.55.2-1.08.56-1.5l1.4-1.62L6.2 6.5A2.35 2.35 0 0 1 8.36 5h7.28a2.35 2.35 0 0 1 2.16 1.5l1.24 2.88 1.4 1.62c.36.42.56.95.56 1.5v2.8a2.2 2.2 0 0 1-2.2 2.2h-1.4M7 17.5a2 2 0 1 0 4 0m6 0a2 2 0 1 0-4 0M5.6 10h12.8L17 6.9a1 1 0 0 0-.92-.6H7.92a1 1 0 0 0-.92.6L5.6 10Z"/></svg>
+              Lihat Mobil
+            </a>
+            <a class="btn ghost inline-flex min-h-9 min-w-[150px] items-center justify-center gap-[9px] rounded-lg border border-white/80 bg-white/10 px-5 font-semibold text-white transition hover:-translate-y-0.5 max-[590px]:w-full" href="#kontak">
+              <svg class="h-[19px] w-[19px] fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16.6v2.6a1.7 1.7 0 0 1-1.85 1.7A16.8 16.8 0 0 1 3.1 4.85 1.7 1.7 0 0 1 4.8 3h2.6a1.7 1.7 0 0 1 1.7 1.46c.1.75.27 1.47.5 2.17a1.7 1.7 0 0 1-.38 1.74L8.1 9.48a13.6 13.6 0 0 0 6.42 6.42l1.1-1.1a1.7 1.7 0 0 1 1.75-.39c.7.23 1.42.4 2.17.5A1.7 1.7 0 0 1 21 16.6Z"/></svg>
+              Hubungi Kami
+            </a>
+          </div>
+        </div>
+        <img class="hero-car relative z-[1] h-full w-full object-cover object-center [mask-image:linear-gradient(90deg,transparent_0,black_18%,black_100%)] max-[820px]:min-h-[280px] max-[820px]:[mask-image:linear-gradient(180deg,transparent_0,black_18%,black_100%)]" src="assets/hero-car.jpg" alt="Toyota Innova hitam di jalan pegunungan">
+      </article>
+
+      <article class="hero-panel absolute inset-0 grid grid-cols-[45%_55%] opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out [&.active]:opacity-100 [&.active]:pointer-events-auto max-[820px]:grid-cols-1 max-[820px]:grid-rows-[auto_1fr]" data-slide="1">
+        <div class="hero-copy relative z-10 flex max-w-[500px] flex-col justify-center px-6 py-[42px] pb-12 pl-[74px] text-white max-[820px]:px-7 max-[820px]:py-10 max-[820px]:pb-3 max-[590px]:px-5 max-[590px]:pt-[34px]">
+          <span class="eyebrow mb-[18px] self-start rounded-full bg-[#0b63d8] px-4 py-2 text-xs font-medium">Paket Harian &amp; Bulanan</span>
+          <h2 class="mb-3 text-[clamp(24px,3.5vw,32px)] font-semibold leading-[1.14] text-white max-[590px]:text-[31px]">Sopir Profesional, Unit Selalu Siap Jalan</h2>
+          <p class="mb-[22px] max-w-[480px] text-[17px] font-normal text-white/90 max-[590px]:text-[15px]">Pilih lepas kunci atau dengan driver ramah untuk agenda kantor, wisata, dan antar jemput keluarga.</p>
+          <div class="hero-actions flex flex-wrap gap-[18px] max-[590px]:w-full">
+            <a class="btn primary inline-flex min-h-9 min-w-[150px] items-center justify-center gap-[9px] rounded-lg bg-[#0875ff] px-5 font-semibold text-white shadow-[0_12px_22px_rgba(8,117,255,.28)] transition hover:-translate-y-0.5 max-[590px]:w-full" href="#mobil">Pilih Unit</a>
+            <a class="btn ghost inline-flex min-h-9 min-w-[150px] items-center justify-center gap-[9px] rounded-lg border border-white/80 bg-white/10 px-5 font-semibold text-white transition hover:-translate-y-0.5 max-[590px]:w-full" href="#layanan">Lihat Layanan</a>
+          </div>
+        </div>
+        <img class="hero-car relative z-[1] h-full w-full object-cover object-center [mask-image:linear-gradient(90deg,transparent_0,black_18%,black_100%)] max-[820px]:min-h-[280px] max-[820px]:[mask-image:linear-gradient(180deg,transparent_0,black_18%,black_100%)]" src="assets/banner-car.jpg" alt="Mobil putih melaju di jalan kota">
+      </article>
+
+      <button class="slider-arrow next absolute right-3.5 top-1/2 z-20 grid h-10 w-10 -translate-y-1/2 cursor-pointer place-items-center rounded-full bg-white text-[#061b46] shadow-[0_8px_20px_rgba(0,24,61,.18)] max-[820px]:bottom-5 max-[820px]:top-auto max-[590px]:right-3" type="button" aria-label="Slide berikutnya">
+        <svg class="h-[23px] w-[23px] fill-none stroke-current stroke-[3] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="m8.8 5.2 6.8 6.8-6.8 6.8"/></svg>
+      </button>
+
+      <div class="slider-dots absolute bottom-[18px] left-1/2 z-20 flex -translate-x-1/2 gap-[7px]" aria-label="Navigasi slide">
+        <button class="active h-[7px] w-[15px] cursor-pointer rounded-full bg-white/60 [&.active]:w-[21px] [&.active]:bg-white" type="button" aria-label="Tampilkan slide 1"></button>
+        <button class="h-[7px] w-[15px] cursor-pointer rounded-full bg-white/60 [&.active]:w-[21px] [&.active]:bg-white" type="button" aria-label="Tampilkan slide 2"></button>
+      </div>
+    </section>
+
+    <section class="comfort-banner relative mt-[18px] grid min-h-[231px] grid-cols-[52%_48%] overflow-hidden rounded-2xl bg-gradient-to-br from-[#162235] to-[#596b7d] shadow-[0_12px_32px_rgba(10,38,86,.13)] max-[820px]:grid-cols-1" id="layanan">
+      <div class="relative z-10 p-[34px_44px] text-white max-[820px]:p-[30px_26px_16px]">
+        <h2 class="mb-6 text-[clamp(24px,3.3vw,32px)] font-medium leading-[1.14]">Perjalanan Nyaman<br>Bersama RentCar</h2>
+        <div class="banner-features grid max-w-[560px] grid-cols-4 gap-[22px] max-[820px]:grid-cols-2">
+          <span class="grid justify-items-center gap-2 whitespace-nowrap text-center text-xs font-semibold text-white">
+            <svg class="h-8 w-8 fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.2c0 4.8 3.2 8.1 7.5 9.8 4.3-1.7 7.5-5 7.5-9.8V6L12 3Zm0 4v10"/></svg>
+            Unit Terawat
+          </span>
+          <span class="grid justify-items-center gap-2 whitespace-nowrap text-center text-xs font-semibold text-white">
+            <svg class="h-8 w-8 fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.2 13.2 20.6a2 2 0 0 1-2.8 0l-7-7V4h9.6l7.6 7.6a2 2 0 0 1 0 1.6ZM7.5 7.5h.02"/></svg>
+            Harga Terbaik
+          </span>
+          <span class="grid justify-items-center gap-2 whitespace-nowrap text-center text-xs font-semibold text-white">
+            <svg class="h-8 w-8 fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+            Driver Profesional
+          </span>
+          <span class="grid justify-items-center gap-2 whitespace-nowrap text-center text-xs font-semibold text-white">
+            <svg class="h-8 w-8 fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l3.4 2M4.1 13a8 8 0 1 0 1.6-5M4 4v4h4"/></svg>
+            Layanan 24 Jam
+          </span>
+        </div>
+      </div>
+      <img class="h-full w-full object-cover object-center [mask-image:linear-gradient(90deg,transparent_0,black_22%,black_100%)] max-[820px]:min-h-[220px] max-[820px]:[mask-image:linear-gradient(180deg,transparent_0,black_16%,black_100%)]" src="assets/banner-car.jpg" alt="Mitsubishi Pajero putih untuk rental perjalanan kota">
+      <div class="mini-dots absolute bottom-[18px] left-1/2 z-20 flex -translate-x-1/2 gap-[7px]" aria-hidden="true"><i class="h-[7px] w-[21px] rounded-full bg-white"></i><i class="h-[7px] w-[15px] rounded-full bg-white/60"></i><i class="h-[7px] w-[15px] rounded-full bg-white/60"></i><i class="h-[7px] w-[15px] rounded-full bg-white/60"></i></div>
+    </section>
+
+    <section class="cars-section" id="mobil">
+      <div class="section-heading my-7 mb-[22px] text-center">
+        <h2 class="mb-[5px] text-[clamp(24px,3.5vw,32px)] font-semibold leading-[1.14] text-[#102344]">Pilihan Mobil Terbaik</h2>
+        <p class="m-0 text-[17px] font-medium text-[#5d6a81]">Tersedia berbagai tipe mobil sesuai kebutuhan Anda</p>
+      </div>
+
+      <div class="car-grid grid grid-cols-6 gap-3 max-[1120px]:grid-cols-3 max-[590px]:grid-cols-1">
+        <article class="car-card relative min-w-0 overflow-hidden rounded-lg border border-[#e7edf6] bg-white p-[9px] pb-2.5 shadow-[0_10px_24px_rgba(23,45,78,.14)] max-[590px]:p-2.5">
+          <span class="badge absolute left-2.5 top-2 z-10 rounded-md bg-[#0875ff] px-2 py-[5px] text-[11px] font-medium text-white">City Car</span>
+          <img class="mb-2.5 h-[90px] w-full rounded-md bg-[#eef3f9] object-cover max-[1120px]:h-[120px] max-[590px]:h-[170px]" src="assets/car-agya.jpg" alt="Toyota Agya putih">
+          <h3 class="mx-1.5 mb-1.5 text-[15px] font-semibold leading-tight text-[#15233d] max-[590px]:mx-1">Toyota Agya</h3>
+          <p class="specs mx-1.5 mb-[9px] flex gap-[11px] text-[11px] font-semibold text-[#56657d] max-[590px]:mx-1"><span>4 Kursi</span><span>Matic</span></p>
+          <p class="price mx-1.5 mb-2.5 whitespace-nowrap text-[17px] font-semibold leading-none text-[#0875ff] max-[590px]:mx-1">Rp 250.000 <small class="text-[13px] font-semibold text-[#1e2d45]">/ hari</small></p>
+          <button class="mx-[13px] inline-flex min-h-[29px] w-[calc(100%_-_26px)] cursor-pointer items-center justify-center rounded-lg border border-[#0875ff] bg-white text-xs font-semibold text-[#0875ff] transition hover:-translate-y-0.5 hover:bg-[#0875ff] hover:text-white" type="button" data-car="Toyota Agya">Lihat Detail</button>
+        </article>
+        <article class="car-card relative min-w-0 overflow-hidden rounded-lg border border-[#e7edf6] bg-white p-[9px] pb-2.5 shadow-[0_10px_24px_rgba(23,45,78,.14)] max-[590px]:p-2.5">
+          <span class="badge absolute left-2.5 top-2 z-10 rounded-md bg-[#0875ff] px-2 py-[5px] text-[11px] font-medium text-white">MPV</span>
+          <img class="mb-2.5 h-[90px] w-full rounded-md bg-[#eef3f9] object-cover max-[1120px]:h-[120px] max-[590px]:h-[170px]" src="assets/car-avanza.jpg" alt="Toyota Avanza hitam">
+          <h3 class="mx-1.5 mb-1.5 text-[15px] font-semibold leading-tight text-[#15233d] max-[590px]:mx-1">Toyota Avanza</h3>
+          <p class="specs mx-1.5 mb-[9px] flex gap-[11px] text-[11px] font-semibold text-[#56657d] max-[590px]:mx-1"><span>7 Kursi</span><span>Matic</span></p>
+          <p class="price mx-1.5 mb-2.5 whitespace-nowrap text-[17px] font-semibold leading-none text-[#0875ff] max-[590px]:mx-1">Rp 350.000 <small class="text-[13px] font-semibold text-[#1e2d45]">/ hari</small></p>
+          <button class="mx-[13px] inline-flex min-h-[29px] w-[calc(100%_-_26px)] cursor-pointer items-center justify-center rounded-lg border border-[#0875ff] bg-white text-xs font-semibold text-[#0875ff] transition hover:-translate-y-0.5 hover:bg-[#0875ff] hover:text-white" type="button" data-car="Toyota Avanza">Lihat Detail</button>
+        </article>
+        <article class="car-card relative min-w-0 overflow-hidden rounded-lg border border-[#e7edf6] bg-white p-[9px] pb-2.5 shadow-[0_10px_24px_rgba(23,45,78,.14)] max-[590px]:p-2.5">
+          <span class="badge absolute left-2.5 top-2 z-10 rounded-md bg-[#0875ff] px-2 py-[5px] text-[11px] font-medium text-white">MPV</span>
+          <img class="mb-2.5 h-[90px] w-full rounded-md bg-[#eef3f9] object-cover max-[1120px]:h-[120px] max-[590px]:h-[170px]" src="assets/car-innova.jpg" alt="Toyota Innova putih">
+          <h3 class="mx-1.5 mb-1.5 text-[15px] font-semibold leading-tight text-[#15233d] max-[590px]:mx-1">Toyota Innova</h3>
+          <p class="specs mx-1.5 mb-[9px] flex gap-[11px] text-[11px] font-semibold text-[#56657d] max-[590px]:mx-1"><span>7 Kursi</span><span>Matic</span></p>
+          <p class="price mx-1.5 mb-2.5 whitespace-nowrap text-[17px] font-semibold leading-none text-[#0875ff] max-[590px]:mx-1">Rp 500.000 <small class="text-[13px] font-semibold text-[#1e2d45]">/ hari</small></p>
+          <button class="mx-[13px] inline-flex min-h-[29px] w-[calc(100%_-_26px)] cursor-pointer items-center justify-center rounded-lg border border-[#0875ff] bg-white text-xs font-semibold text-[#0875ff] transition hover:-translate-y-0.5 hover:bg-[#0875ff] hover:text-white" type="button" data-car="Toyota Innova">Lihat Detail</button>
+        </article>
+        <article class="car-card relative min-w-0 overflow-hidden rounded-lg border border-[#e7edf6] bg-white p-[9px] pb-2.5 shadow-[0_10px_24px_rgba(23,45,78,.14)] max-[590px]:p-2.5">
+          <span class="badge absolute left-2.5 top-2 z-10 rounded-md bg-[#0875ff] px-2 py-[5px] text-[11px] font-medium text-white">SUV</span>
+          <img class="mb-2.5 h-[90px] w-full rounded-md bg-[#eef3f9] object-cover max-[1120px]:h-[120px] max-[590px]:h-[170px]" src="assets/car-crv.jpg" alt="Honda CR-V hitam">
+          <h3 class="mx-1.5 mb-1.5 text-[15px] font-semibold leading-tight text-[#15233d] max-[590px]:mx-1">Honda CR-V</h3>
+          <p class="specs mx-1.5 mb-[9px] flex gap-[11px] text-[11px] font-semibold text-[#56657d] max-[590px]:mx-1"><span>5 Kursi</span><span>Matic</span></p>
+          <p class="price mx-1.5 mb-2.5 whitespace-nowrap text-[17px] font-semibold leading-none text-[#0875ff] max-[590px]:mx-1">Rp 650.000 <small class="text-[13px] font-semibold text-[#1e2d45]">/ hari</small></p>
+          <button class="mx-[13px] inline-flex min-h-[29px] w-[calc(100%_-_26px)] cursor-pointer items-center justify-center rounded-lg border border-[#0875ff] bg-white text-xs font-semibold text-[#0875ff] transition hover:-translate-y-0.5 hover:bg-[#0875ff] hover:text-white" type="button" data-car="Honda CR-V">Lihat Detail</button>
+        </article>
+        <article class="car-card relative min-w-0 overflow-hidden rounded-lg border border-[#e7edf6] bg-white p-[9px] pb-2.5 shadow-[0_10px_24px_rgba(23,45,78,.14)] max-[590px]:p-2.5">
+          <span class="badge absolute left-2.5 top-2 z-10 rounded-md bg-[#0875ff] px-2 py-[5px] text-[11px] font-medium text-white">Premium</span>
+          <img class="mb-2.5 h-[90px] w-full rounded-md bg-[#eef3f9] object-cover max-[1120px]:h-[120px] max-[590px]:h-[170px]" src="assets/car-alphard.jpg" alt="Toyota Alphard hitam">
+          <h3 class="mx-1.5 mb-1.5 text-[15px] font-semibold leading-tight text-[#15233d] max-[590px]:mx-1">Toyota Alphard</h3>
+          <p class="specs mx-1.5 mb-[9px] flex gap-[11px] text-[11px] font-semibold text-[#56657d] max-[590px]:mx-1"><span>7 Kursi</span><span>Matic</span></p>
+          <p class="price mx-1.5 mb-2.5 whitespace-nowrap text-[17px] font-semibold leading-none text-[#0875ff] max-[590px]:mx-1">Rp 1.500.000 <small class="text-[13px] font-semibold text-[#1e2d45]">/ hari</small></p>
+          <button class="mx-[13px] inline-flex min-h-[29px] w-[calc(100%_-_26px)] cursor-pointer items-center justify-center rounded-lg border border-[#0875ff] bg-white text-xs font-semibold text-[#0875ff] transition hover:-translate-y-0.5 hover:bg-[#0875ff] hover:text-white" type="button" data-car="Toyota Alphard">Lihat Detail</button>
+        </article>
+        <article class="car-card relative min-w-0 overflow-hidden rounded-lg border border-[#e7edf6] bg-white p-[9px] pb-2.5 shadow-[0_10px_24px_rgba(23,45,78,.14)] max-[590px]:p-2.5">
+          <span class="badge absolute left-2.5 top-2 z-10 rounded-md bg-[#0875ff] px-2 py-[5px] text-[11px] font-medium text-white">Minibus</span>
+          <img class="mb-2.5 h-[90px] w-full rounded-md bg-[#eef3f9] object-cover max-[1120px]:h-[120px] max-[590px]:h-[170px]" src="assets/car-hiace.jpg" alt="Toyota Hiace putih">
+          <h3 class="mx-1.5 mb-1.5 text-[15px] font-semibold leading-tight text-[#15233d] max-[590px]:mx-1">Toyota Hiace</h3>
+          <p class="specs mx-1.5 mb-[9px] flex gap-[11px] text-[11px] font-semibold text-[#56657d] max-[590px]:mx-1"><span>15 Kursi</span><span>Manual</span></p>
+          <p class="price mx-1.5 mb-2.5 whitespace-nowrap text-[17px] font-semibold leading-none text-[#0875ff] max-[590px]:mx-1">Rp 1.200.000 <small class="text-[13px] font-semibold text-[#1e2d45]">/ hari</small></p>
+          <button class="mx-[13px] inline-flex min-h-[29px] w-[calc(100%_-_26px)] cursor-pointer items-center justify-center rounded-lg border border-[#0875ff] bg-white text-xs font-semibold text-[#0875ff] transition hover:-translate-y-0.5 hover:bg-[#0875ff] hover:text-white" type="button" data-car="Toyota Hiace">Lihat Detail</button>
+        </article>
+      </div>
+
+      <a class="all-cars mx-auto mt-4 inline-flex min-h-9 w-fit min-w-[184px] items-center justify-center gap-[9px] rounded-lg bg-[#0875ff] px-6 font-semibold text-white shadow-[0_12px_22px_rgba(8,117,255,.22)] transition hover:-translate-y-0.5" href="#kontak">
+        <svg class="h-[19px] w-[19px] fill-none stroke-current stroke-2 [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z"/></svg>
+        Lihat Semua Mobil
+      </a>
+    </section>
+
+    <section class="service-strip mt-[26px] grid grid-cols-4 gap-4 rounded-2xl bg-[#eef6ff] px-7 py-5 max-[1120px]:grid-cols-2 max-[590px]:grid-cols-1 max-[590px]:p-[18px]" id="syarat">
+      <article class="grid grid-cols-[64px_1fr] items-center gap-3.5 max-[590px]:grid-cols-[58px_1fr]">
+        <span class="grid h-[58px] w-[58px] place-items-center rounded-full border-4 border-white bg-white text-[#0875ff] shadow-[0_7px_20px_rgba(8,117,255,.16)]"><svg class="h-[34px] w-[34px] fill-none stroke-current stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.2c0 4.8 3.2 8.1 7.5 9.8 4.3-1.7 7.5-5 7.5-9.8V6L12 3Zm-3 9 2 2 4-5"/></svg></span>
+        <div>
+          <h3 class="mb-1 text-[17px] font-semibold">Unit Terawat</h3>
+          <p class="m-0 text-[13px] font-semibold leading-snug text-[#5d6a81]">Semua mobil selalu dalam kondisi prima dan bersih.</p>
+        </div>
+      </article>
+      <article class="grid grid-cols-[64px_1fr] items-center gap-3.5 max-[590px]:grid-cols-[58px_1fr]">
+        <span class="grid h-[58px] w-[58px] place-items-center rounded-full border-4 border-white bg-white text-[#0875ff] shadow-[0_7px_20px_rgba(8,117,255,.16)]"><svg class="h-[34px] w-[34px] fill-none stroke-current stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.2 13.2 20.6a2 2 0 0 1-2.8 0l-7-7V4h9.6l7.6 7.6a2 2 0 0 1 0 1.6ZM7.5 7.5h.02"/></svg></span>
+        <div>
+          <h3 class="mb-1 text-[17px] font-semibold">Harga Kompetitif</h3>
+          <p class="m-0 text-[13px] font-semibold leading-snug text-[#5d6a81]">Harga terbaik dengan kualitas layanan terbaik.</p>
+        </div>
+      </article>
+      <article class="grid grid-cols-[64px_1fr] items-center gap-3.5 max-[590px]:grid-cols-[58px_1fr]">
+        <span class="grid h-[58px] w-[58px] place-items-center rounded-full border-4 border-white bg-white text-[#0875ff] shadow-[0_7px_20px_rgba(8,117,255,.16)]"><svg class="h-[34px] w-[34px] fill-none stroke-current stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l3.4 2M4.1 13a8 8 0 1 0 1.6-5M4 4v4h4"/></svg></span>
+        <div>
+          <h3 class="mb-1 text-[17px] font-semibold">Layanan 24 Jam</h3>
+          <p class="m-0 text-[13px] font-semibold leading-snug text-[#5d6a81]">Siap melayani Anda kapan saja.</p>
+        </div>
+      </article>
+      <article class="grid grid-cols-[64px_1fr] items-center gap-3.5 max-[590px]:grid-cols-[58px_1fr]">
+        <span class="grid h-[58px] w-[58px] place-items-center rounded-full border-4 border-white bg-white text-[#0875ff] shadow-[0_7px_20px_rgba(8,117,255,.16)]"><svg class="h-[34px] w-[34px] fill-none stroke-current stroke-[2.5] [stroke-linecap:round] [stroke-linejoin:round]" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg></span>
+        <div>
+          <h3 class="mb-1 text-[17px] font-semibold">Driver Profesional</h3>
+          <p class="m-0 text-[13px] font-semibold leading-snug text-[#5d6a81]">Driver berpengalaman, ramah, dan tepat waktu.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="about-section grid grid-cols-[.9fr_1.1fr] items-start gap-[34px] px-1 pb-3 pt-[38px] max-[820px]:grid-cols-1" id="tentang">
+      <h2 class="m-0 text-[clamp(20px,2.7vw,24px)] font-medium leading-[1.14] text-[#102344]">Rental mobil fleksibel untuk setiap rencana perjalanan.</h2>
+      <p class="m-0 text-[15px] font-medium leading-normal text-[#5d6a81]">RentCar membantu pelanggan memilih unit yang sesuai, mulai dari city car hemat sampai minibus untuk rombongan. Proses booking dibuat cepat melalui WhatsApp dengan konfirmasi jadwal, titik jemput, dan kebutuhan driver.</p>
+    </section>
+
+    <section class="booking-cta mt-[18px] grid grid-cols-[76px_1fr_210px] items-center gap-[22px] rounded-2xl bg-gradient-to-r from-[#031c4d] to-[#06295f] py-[18px] pl-[46px] pr-[60px] text-white max-[820px]:grid-cols-1 max-[820px]:justify-items-start max-[820px]:p-6" id="kontak">
+      <div class="cta-icon grid h-14 w-14 place-items-center rounded-full border-[3px] border-white/90" aria-hidden="true">
+        <svg class="h-[34px] w-[34px] fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24"><path d="M12.04 2.5a9.3 9.3 0 0 0-7.9 14.2L3 21l4.4-1.1a9.3 9.3 0 1 0 4.64-17.4Z"/></svg>
+      </div>
+      <div>
+        <h2 class="m-0 text-[17px] font-semibold leading-tight">Butuh Bantuan atau Ingin Booking?</h2>
+        <p class="mt-[3px] text-[13px] font-medium text-white/80">Hubungi kami langsung melalui WhatsApp.</p>
+      </div>
+      <a class="chat-button inline-flex min-h-11 items-center justify-center gap-2 rounded-[10px] bg-gradient-to-b from-[#13bd63] to-[#0fac58] px-5 text-sm font-semibold text-white shadow-[0_12px_22px_rgba(19,189,99,.24)] transition hover:-translate-y-0.5 max-[820px]:w-full" href="https://wa.me/6281234567890?text=Halo%20RentCar%2C%20saya%20ingin%20bertanya%20tentang%20rental%20mobil" target="_blank" rel="noopener">
+        <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2.5a9.3 9.3 0 0 0-7.9 14.2L3 21l4.4-1.1a9.3 9.3 0 1 0 4.64-17.4Z"/></svg>
+        Chat WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <div class="modal pointer-events-none fixed inset-0 z-50 grid place-items-center bg-[rgba(4,16,39,.56)] p-6 opacity-0 transition-opacity duration-200 [&.open]:pointer-events-auto [&.open]:opacity-100" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card relative w-[min(420px,100%)] rounded-xl bg-white p-[26px] shadow-[0_20px_60px_rgba(3,20,50,.35)]">
+      <button class="modal-close absolute right-3 top-2.5 h-8 w-8 cursor-pointer rounded-full bg-[#edf5ff] text-2xl leading-none text-[#102344]" type="button" aria-label="Tutup detail">&times;</button>
+      <h2 id="modal-title" class="mb-2 text-2xl font-semibold text-[#102344]">Detail Mobil</h2>
+      <p id="modal-copy" class="mb-[18px] text-[#5d6a81]">Unit tersedia untuk rental harian, mingguan, dan bulanan.</p>
+      <a id="modal-wa" class="chat-button inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-[10px] bg-gradient-to-b from-[#13bd63] to-[#0fac58] px-5 text-sm font-semibold text-white shadow-[0_12px_22px_rgba(19,189,99,.24)] transition hover:-translate-y-0.5" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Booking via WhatsApp</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
